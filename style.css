@@ -1,0 +1,533 @@
+/*to add website fonts*/
+
+@font-face {
+    font-family: "HeadingFont";
+    src: url("fonts/Syabil-Book.otf") format("truetype");
+}
+@font-face {
+    font-family: "SubHeadingFont";
+    src: url("fonts/Tommy-Soft-Medium.otf") format("truetype");
+}
+@font-face {
+    font-family: "ContentFont";
+    src: url("fonts/Tommy-Soft-Light.otf") format("truetype");
+}
+
+/*to style html and body area*/
+html, body{
+    margin: 0 ;
+    padding: 0;
+}
+/*to style header sction*/
+header{
+    height: 80px;
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
+   position:fixed;
+   top: 0;
+   background-color: #ffecaa;
+   display: flex;
+   align-items: center;
+   z-index: 1000;
+
+}
+
+#logo{
+    height: 70px;
+    width: auto;
+   margin-right: 185px;
+   margin-left: 5px;
+   
+}
+
+/*to style navigation menu*/
+nav ul{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+ 
+}
+nav li{
+   text-align: center;
+  
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 23px;
+    font-family:"HeadingFont" ;
+    color: rgb(60, 60, 60);
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+nav a:hover{
+    color: #1ca3ec;
+    text-shadow: 2.5px 0 8px #74ccf4;
+    transform: scale(1.15);
+    
+}
+/*to style main area*/
+
+main{
+    margin-bottom: 65px;
+}
+
+/*to style texts in the webpage*/
+.headings{
+    text-align: center;
+    font-family:"HeadingFont" ;
+    font-size: 65px;
+        color: #2c2c2c;
+    text-shadow: 2px 2px 2px gray;
+    font-style: italic;
+       background-image: url(images/backgroundLogo.png);
+   background-repeat: repeat;
+   background-size: 68px;
+   border-top: 2px solid #74cbf480;
+
+}
+.subheadings{
+    
+    font-family: "SubHeadingFont";
+    font-size: 32px;
+    color: #0a4f7a;
+    border-bottom: 3px solid #0a4f7a;
+    display: block;
+    width: fit-content;
+    margin: auto;
+
+}
+.content{
+    text-align: left;
+    font-family: "ContentFont";
+    font-size: 24px;
+    margin: 35px;
+    padding: 0;
+      color: rgb(60, 60, 60);    
+}
+
+/*to style the main banner*/
+
+#Home{
+    margin-top: 80px;
+    padding: 0;
+    height: 80px;
+    min-height: 500px;
+}
+#banner{
+    background-color: #ffecaa;
+    width: 100%;
+    min-height: 500px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+}
+
+#BannerLogo{
+ height:40%;
+ width:18%;
+   position: absolute;
+   top: 55%;
+   left: 50%;
+    transform: translate(-50%,-45%);
+
+}
+#welcomeNote{
+    text-align: center;
+    font-family:"HeadingFont" ;
+    font-size: 75px;
+    margin-top: 50px;
+    font-style: italic;
+    color: #2c2c2c;
+}
+#welcomeNote span{
+    color: #1ca3ec;
+}
+#topRight{
+    height: 275px;
+    width: 275px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#bottomLeft{
+    height: 313px;
+    width: 300px;
+    position: absolute;
+   bottom: 0;
+   left: 0;
+}
+#bannerButton{
+ position: absolute;
+    top: 85%;
+   left: 50%;
+    transform: translate(-50%,-15%);
+    text-align: center;
+    text-decoration: none;
+    
+}
+.buttons{
+    background-color: #1ca3ec;
+    border-radius: 35px;
+    font-size: 16px;
+    font-family: "SubHeadingFont";
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    width: 120px;
+     transition: 0.3s ease;
+     color: black;
+     
+}
+.buttons:hover{
+    background-color: #74ccf4;
+   color: rgb(60, 60, 60);
+   box-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+}
+
+
+
+/*to style about section*/ 
+#About{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(254, 250, 235, 0.781);
+}
+
+.about{
+    text-align: left;
+    font-family: "ContentFont";
+    font-size: 24px;
+    font-weight: bold;
+    margin: 35px;
+    padding: 0;
+    color: rgb(60, 60, 60); 
+}
+.about::first-letter{
+    font-size: 30px;
+    color: #1ca3ec;
+   font-weight: bold;
+    font-family: "SubHeadingFont";
+
+}
+#bottleVideo{
+    height: 475px;
+    width: auto;
+float: right;
+ 
+}
+.aboutImage{
+    height: 300px;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+#introAbout{
+    text-align: center;
+    font-family: "ContentFont";
+    font-size: 24px;
+   margin-bottom: 50px;
+    padding: 0;
+      color: rgb(60, 60, 60); 
+}
+#introAbout span{
+     font-size: 30px;
+    color: #1ca3ec;
+   font-weight: bold;
+    font-family: "SubHeadingFont";
+}
+
+.icons{
+    height: 50px;
+    width: auto;
+    display: block;
+    margin: 0 auto 15px auto ;
+
+}
+.unique{
+    text-align: center;
+    
+
+}
+#uniquePuff{
+margin: auto;
+column-count: 3;
+column-gap: 5px;
+column-rule: 3px dotted #2c2c2c;
+text-align: center;
+}
+.unique p{
+    text-align: center;
+}
+
+/*to style bottles section*/
+#Bottels{
+    background-color: rgba(254, 250, 235, 0.781);
+}
+.bottleImages{
+    display: inline-block;
+    height: 350px;
+    width: auto;
+    margin: 24px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    
+}
+.caption{
+ text-align: center;
+    font-family: "ContentFont";
+    font-size: 21px;
+    padding: 0;
+      color: rgb(60, 60, 60);   
+     
+}
+/*to style how to section*/
+
+#How{
+ background-color: rgba(254, 250, 235, 0.781);
+}
+
+.leftVideo{
+    height: 500px;
+    width: auto;
+    margin-left: 20px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    clear: both;
+    margin-top: 30px;
+}
+#note1, #note2{
+    color: brown;
+    font-weight: bold;
+}
+/*to style the self corecting quiz*/
+
+.test{
+    text-align: justify;
+    margin: 20px auto;
+    background-color: #ffecaa;
+    width: 50%;
+}
+.test input{
+    margin-left: 20px;
+}
+.test label{
+    margin-left: 10px;
+}
+
+#Check button{
+    background-color: #1ca3ec;
+    border-radius: 35px;
+    font-size: 16px;
+    font-family: "SubHeadingFont";
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    width: 200px;
+     transition: 0.3s ease;
+     color: black;
+}
+#Check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+#Acheck:hover{
+    background-color: #74ccf4;
+   color: rgb(60, 60, 60);
+   box-shadow: -1px 0 navy, 0 1px navy, 1px 0 navy, 0 -1px navy;
+}
+
+#Q1A, #Q2A, #Q3A, #score{
+    color: green;
+    font-size: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+#score{
+    font-size: 20px;
+    color: #2c2c2c;
+}
+
+
+/*to style Podcast section*/
+
+#Podcast{
+ background-color: rgba(254, 250, 235, 0.781);
+}
+.videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+}
+.Podcast:hover{
+    opacity: 1;
+}
+.Podcast{
+    height: 750px;
+    border-radius: 20px;
+    margin: 25px;
+    opacity: 0.85;
+    transition: 1s ease-in-out;
+}
+
+.episodes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.episodes .content{
+    max-width: 420px;
+    text-align: justify;
+    margin: 15px
+
+}
+
+progress{
+    display: block;
+    margin: 0 auto;
+    width: 650px;
+    height: 35px;
+    margin-bottom: 100px;
+}
+/*to style the audio message*/
+
+#message{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    margin-left: 170px;
+    background-color: #ffecaa;
+    height: 75%;
+    width: 75%;
+    padding: 0;
+    overflow: hidden;
+}
+#reminder{
+    margin-left: 0;
+    border-radius: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+audio{
+    height: 50px;
+    width: 700px;
+    margin-right: 15px;
+}
+
+/*to style cotact section*/
+#Contact{
+    background-color: rgba(254, 250, 235, 0.781);
+}
+/*to style the contact form*/
+
+#contactForm{
+    background-color: #ffecaa;
+    min-height: 350px;
+    margin-right: 70px;
+    margin-left: 70px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactForm form{
+    width: 65%;
+    padding: 15px;
+    text-align: center;
+}
+#contactImage{
+    height: auto;
+    width: 35%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    float: none;
+}
+.inform{
+    margin: 0 auto;
+    width: 90%;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-family: "ContentFont";
+    text-align: center;
+   background-color: rgb(255, 255, 255) !important;
+}
+label.content{
+    font-size: 20px;
+    
+}
+#messageBox  {
+    height: 80px !important;
+    width: 90% !important;
+    resize: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-family: "ContentFont";
+    text-align: center;
+   background-color: rgb(255, 255, 255) !important;
+
+}
+#errorEmail, #errorMsg {
+    color: red;
+     font-size: 16px;
+    font-family: "ContentFont";
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+/*to style footer aera*/
+footer{
+    background-color: #ffecaa;
+    width: 100%;
+    margin-bottom: -35px;
+}
+
+#SM{
+ display: flex;
+ gap: 50px;
+ justify-content: center;
+ margin: 0;
+}
+ #SM figure{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+ #copyright{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+ }
